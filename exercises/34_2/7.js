@@ -11,7 +11,7 @@ socket.on('message', (message, rinfo) => {
 });
 
 socket.on('listening', () => {
-  console.log('Eu sou o rei do mundo');
+  console.log('Conectado!!');
 });
 
 socket.bind(8086);
