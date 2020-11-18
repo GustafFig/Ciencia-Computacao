@@ -54,3 +54,13 @@
 > `curl http://localhost:8086`
 
 note que a conexão foi recusada
+
+# 10
+
+> `ifconfig`
+> or
+> `ip a config`
+
+# 11
+
+> `nmcli device status`
