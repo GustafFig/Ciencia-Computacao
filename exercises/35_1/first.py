@@ -54,9 +54,20 @@ def return_sum(N):
     return sum(range(N + 1))
 
 
-def calculate_fuel_price(litre, type, gas_price=2.5, alcool_price=1.9):
+def calculate_fuel_price(
+    liter,
+    type,
+    gas_price=2.5,
+    gas_discount=3,
+    alcool_price=1.9,
+    alcool_discount=4,
+    max_dicount_liter=20,
+):
     if type == "G":
         tax = gas_price
+        discount = gas_discount
     elif type == "A":
         tax = alcool_price
-    return tax * litre
+        discount = alcool_discount
+    if liter < max_dicount_liter:
+        return tax * liter * discount
