@@ -5,3 +5,6 @@ Subjects
 
  - Arquitetura de computador
  - Arquitetura de rede
+ - Segurança
+ - Python
+ - Craling Web dados
