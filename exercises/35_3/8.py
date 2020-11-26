@@ -21,7 +21,7 @@ def take_flags(text):
 def write_flags(*urls):
     print
     for flag in range(len(urls)):
-        with open(f"images/{flag}.bin", "bw") as file:
+        with open(f"images/{flag}.png", "bw") as file:
             file.write(make_img_requisition(urls[flag]))
 
 
