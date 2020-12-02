@@ -1,0 +1,16 @@
+Ele teria estados: altura, largura e unidade.
+Nome da abstração
+Retangulos
+
+atributos/estados
+- altura
+- largura
+- unidades (dependendo do objetivo)
+- cor (dependendo do objetivo, de borda ou preenchimento)
+- localização
+
+comportamentos
+- calcular área
+- calcular perímetro
+- mudar altura, largura, localização, cores
+- devolver a razão

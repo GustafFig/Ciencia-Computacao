@@ -1,0 +1,13 @@
+Nome da Classe Abstrata
+Payment
+
+atributos
+- nome
+- status
+- valor
+
+comportamentos
+- efetuar
+
+relações
+- 

@@ -1,0 +1,2 @@
+Interface é o modo que nos comunicamos com o objeto, que é 
+através dos métodos passados, eles dizem o que deve ser feito em cada mensagem passada ao objeto.
