@@ -1,2 +1,5 @@
 .venv
 tempCodeRunnerFile.py cat
+.pytest_cache
+settings.json
+*.cpython*
