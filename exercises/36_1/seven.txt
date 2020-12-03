@@ -1,13 +1,20 @@
 Nome da Classe Abstrata
-Payment
+Pagamento
 
 atributos
-- nome
 - status
 - valor
 
 comportamentos
 - efetuar
+- cerificar_autorização
 
 relações
-- 
+- Pagamento por Cartão é um tipo de especilização abstrata de Pagamento
+- Em dinheiro é um tipo de especialização de Pagamentos
+
+Nome da Classe Abstrata
+Pagamento por Cartão
+
+atributo
+
