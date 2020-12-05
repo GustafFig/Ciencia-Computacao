@@ -1,0 +1,13 @@
+Nome da Classe
+Pedido
+
+atributos
+- lista de itens
+- quantidade
+- preco
+- código
+- status
+
+comportamento
+- iniciar => status para Preparando
+- finalizar => status para Terminou

@@ -1,0 +1,16 @@
+Nome da Classe Abstrata
+Shapes
+
+atributos
+- cor (novamente pode ter dependendo da ultilização)
+- unidade (novamente pode ter dependendo da ultilização)
+
+comportamentos
+- calcular área (não implementado)
+- calcular perímetro (não implementado)
+- Mudar o tamanho proporcionalemnte
+
+relações:
+- Circulo é uma especialização de Shapes
+- Retanhulo é uma especialização de Shapes
+- Quadrado é uma especialização de Shapes

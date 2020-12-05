@@ -1,0 +1,2 @@
+Mensagens são os comandos que se dá a um objeto para que ele faça alguma ação,
+seja com o próprio estado ou/e com parametros recebidoss

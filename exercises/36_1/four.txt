@@ -1,0 +1,17 @@
+Nome da abstração
+Circulo
+
+atributos
+- raio
+- PI
+- cores()
+- unidade
+- ponto central
+
+comportamento
+- calcular area
+- calcular perimetro
+- calcular arco
+- mudar raio
+- mudar ponto central
+- mudar proporção das dimensções
