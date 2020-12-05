@@ -1,0 +1,67 @@
+Nome da Classe
+User
+
+atributos
+- to_email
+- number
+- push
+
+comportamentos
+- send
+
+Nome da Classe Abstrata
+Sender
+
+atributos
+- message
+
+comportamentos
+- send
+
+relações
+- Email, SMS e Push são especificações de Sender
+
+Nome da Classe
+Email
+
+atributos
+- to_email
+- suject
+- message
+
+comportamentos
+- send
+
+Nome da Classe
+SMS
+
+atributos
+- number
+- message
+
+comportamentos
+- send
+
+Nome da Classe
+Push
+
+atributos
+- push
+- message
+
+comportamentos
+- send
+
+Nome da Classe
+Failed_to_send
+
+atributos
+- forma
+- error
+
+Nome da Classe
+Missing_information
+
+atributos
+- forma
+- missed

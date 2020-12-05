@@ -16,5 +16,25 @@ relações
 Nome da Classe Abstrata
 Pagamento por Cartão
 
-atributo
+atributos
+- status
+- valor
 
+comportamentos
+- efetuar
+- certificar_autorização
+
+relações
+- Crédito e Débito são tipos de pagamentos por Cartão
+
+Nome da Classe
+Pagamento por dinheiro
+
+atributos
+- status
+- valor
+
+comportamentos
+- efetuar
+- confirmar_troco
+- certificar_autorização

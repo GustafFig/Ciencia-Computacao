@@ -1,0 +1,10 @@
+Nome da Classe Abstrata
+Televisão
+
+atributos
+- _channel
+- _sond
+
+comportamentos
+- change_channel
+- change_sond
