@@ -11,6 +11,9 @@ class Deque:
     def __str__(self):
         return "Deque(" + ", ".join(map(lambda x: str(x), self._data)) + ")"
 
+    def __repr__(self):
+        return "Deque(" + ", ".join(map(lambda x: str(x), self._data)) + ")"
+
     def push_front(self, value):
         self._data.insert(self.FIRST_ELEMENT, value)
 
@@ -49,14 +52,14 @@ if __name__ == "__main__":
     for elem in elements_2:
         deque.push_back(elem)
 
-    print(deque) # saída: Deque(10, 9, 8, 7, 6, 1, 2, 3, 4, 5)
-    print(deque.__len__()) # saída: 10
+    print(deque)  # saída: Deque(10, 9, 8, 7, 6, 1, 2, 3, 4, 5)
+    print(deque.__len__())  # saída: 10
 
-    print(deque.pop_front()) # saída: 10, pois ele retorna o número retirado
-    print(deque.pop_back()) # saída: 5, pois ele retorna o número retirado
+    print(deque.pop_front())  # saída: 10, pois ele retorna o número retirado
+    print(deque.pop_back())  # saída: 5, pois ele retorna o número retirado
 
-    print(deque) # saída: Deque(9, 8, 7, 6, 1, 2, 3, 4)
-    print(deque.__len__()) # saída: 8
+    print(deque)  # saída: Deque(9, 8, 7, 6, 1, 2, 3, 4)
+    print(deque.__len__())  # saída: 8
 
-    print(deque.peek_front()) # saída: 9
-    print(deque.peek_back()) # saída: 4
+    print(deque.peek_front())  # saída: 9
+    print(deque.peek_back())  # saída: 4

@@ -23,3 +23,7 @@ Utilize o construtor da classe para definir a capacidade da estrutura, exemplo D
 
 Crie um algorítimo que, ao receber uma sequencia de caracteres, indique se ela é ou não um palíndromo. Para este exercício iremos considerar todas os caracteres como minúsculos e desconsiderar espaços, pontuação e caracteres especiais.
 Use a tabela a seguir como exemplo para seus testes:
+
+### Bonus
+
+#### 4) Pilhas - Baseado nos conhecimentos adquiridos neste bloco, implemente uma pilha utilizando a Deque como a estrutura interna. Sua pilha deve conter as operações: push, pop, peek e is_empty
