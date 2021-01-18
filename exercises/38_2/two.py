@@ -1,33 +1,60 @@
-def find_biggest_substring(string):
-    set_str = set(string)
-    set_str_sub = set(string)
-    size = 0
-    size_try = 0
-    for letter in string:
-        if letter not in set_str:
-            set_str = set_str_sub
-            size_try = 0
-        if letter in set_str:
-            size_try += 1
-            set_str.discard(letter)
-        if size_try > size:
-            size = size_try
+def with_n2(string):
+    biggest = ""
+    current = ""
 
-    return size
+    for char in string:
+        # verify string
+        insert = False
+        next_string = ""
+
+        for sub_char_ind in range(len(current)):
+            sub_char = current[sub_char_ind]
+            if insert:
+                next_string += sub_char
+            if sub_char == char:
+                insert = True
+
+        if insert:
+            current = next_string
+
+        current += char
+
+        if len(current) > len(biggest):
+            biggest = current
+
+    return len(biggest)
 
 
-def biggest_distinct_substring(string):
-    biggest_subs, candidate_subs = "", ""
-    for letter in string:
-        if letter not in candidate_subs:
-            candidate_subs += letter
-            if candidate_subs > biggest_subs:
-                biggest_subs = candidate_subs
-    return len(biggest_subs)
+def with_min_ind(string):
+    min_ind = 0
+    char_dict = {}
+    biggest = 0
+
+    for char_ind in range(len(string)):
+        char = string[char_ind]
+
+        if char not in char_dict:
+            char_dict[char] = char_ind
+            size = char_ind - min_ind + 1
+            if size > biggest:
+                biggest = size
+            continue
+
+        last_ind_char = char_dict[char]
+
+        if last_ind_char >= min_ind:
+            min_ind = last_ind_char + 1
+
+        size = char_ind - min_ind + 1
+        if size > biggest:
+            biggest = size
+
+        char_dict[char] = char_ind
+
+    return biggest
 
 
 if __name__ == "__main__":
-    # print(find_biggest_substring("ABCABCBB"))
-    # print(find_biggest_substring("geeksforgeeks"))
-    print(find_biggest_substring("eaaagebaks"))
-    print(biggest_distinct_substring("eaaagebaks"))
+    print(with_n2("bebgebakgs"))
+    print(with_min_ind("bebgebakgs"))
+    print(with_min_ind("abcda"))
